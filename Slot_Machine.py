@@ -136,9 +136,9 @@ def spin(balance):
     winnings, winning_lines = check_winnings(slots, lines, bet, symbol_value)  # Check if the user won
     print(f"You won ${winnings}.")  # Display the winnings
     if winning_lines:  # If there are winning lines
-        print(f"You won on the lines:", *winning_lines)  # Display the winning lines
+        print(f"You won on lines:", *winning_lines)  # Display the winning lines
     else:
-        print("Oops! No win this time!")  # If no lines won
+        print("You won on the lines: 0")  # If no lines won
 
     return winnings - total_bet  # Return the net result (winnings - total bet)
 
